@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/configurable_power_menu_title">
+
+        <CheckBoxPreference android:key="show_power_menu"
+            android:title="@string/title_show_power_menu" />
+
+        <CheckBoxPreference android:key="show_reboot_menu"
+            android:title="@string/title_show_reboot_menu" />
+
+        <CheckBoxPreference android:key="show_profiles_menu"
+            android:title="@string/title_show_profiles_menu" />
+
+        <CheckBoxPreference android:key="show_screenshot"
+            android:title="@string/title_show_screenshot" />
+
+        <CheckBoxPreference android:key="show_airplane_mode"
+            android:title="@string/title_show_airplane_mode" />
+
+        <CheckBoxPreference android:key="show_torch_toggle"
+            android:title="@string/title_show_torch_toggle" />
+
+        <CheckBoxPreference android:key="show_navbar_toggle"
+            android:title="@string/title_show_navbar_toggle" />
+
+        <CheckBoxPreference android:key="show_silent_toggle"
+            android:title="@string/title_show_silent_toggle" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/navactions_layout_title">
+
+        <ListPreference
+            android:key="pref_navactions_layout"
+            android:title="@string/navactions_layout"
+            android:summary="@string/navactions_layout_summary"
+            android:entries="@array/powermenu_nav_layout_entries"
+            android:entryValues="@array/powermenu_nav_layout_values" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

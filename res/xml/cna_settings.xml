@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="">
+
+    <PreferenceCategory 
+        android:title="@string/powermenu_settings_header">
+
+        <PreferenceScreen
+            android:key="powermenu_settings"
+            android:fragment="com.android.settings.cna.PowerMenuSettings"
+            android:title="@string/powermenu_settings_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/status_bar_settings_header">
+
+        <PreferenceScreen
+            android:key="notification_widget_settings"
+            android:fragment="com.android.settings.cna.PowerWidget"
+            android:title="@string/notification_widget_settings_title" />
+
+        <PreferenceScreen
+            android:key="battery_settings"
+            android:fragment="com.android.settings.cna.BatterySettings"
+            android:title="@string/battery_settings_title" />
+
+        <PreferenceScreen
+            android:key="clock_settings"
+            android:fragment="com.android.settings.cna.ClockSettings"
+            android:title="@string/clock_settings_title" />
+
+        <PreferenceScreen
+            android:key="signal_settings"
+            android:fragment="com.android.settings.cna.SignalBarSettings"
+            android:title="@string/signal_settings_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/lockscreen_settings_header">
+
+        <PreferenceScreen
+            android:key="lockscreen_style_settings"
+            android:fragment="com.android.settings.cna.LockscreenStyleSettings"
+            android:title="@string/lockscreen_style_settings_title" />
+
+        <PreferenceScreen
+            android:key="lockscreen_options_settings"
+            android:fragment="com.android.settings.cna.LockscreenOptionsSettings"
+            android:title="@string/lockscreen_options_settings_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/display_settings_header">
+
+        <PreferenceScreen
+            android:key="backlight_settings"
+            android:fragment="com.android.settings.cna.BacklightSettings"
+            android:title="@string/backlight_settings_title" />
+
+        <PreferenceScreen
+            android:key="animations_settings"
+            android:fragment="com.android.settings.cna.AnimationsSettings"
+            android:title="@string/animations_settings_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="@string/notifications_settings_header">
+
+        <PreferenceScreen
+            android:key="notification_pulse"
+            android:title="@string/notification_pulse_title"
+            android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/general_settings_header">
+
+        <PreferenceScreen
+            android:key="general_settings"
+            android:fragment="com.android.settings.cna.GeneralSettings"
+            android:title="@string/general_settings_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

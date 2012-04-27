@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/menu_options_title">
+
+        <ListPreference
+            android:entries="@array/pref_navigation_menu_display_entries"
+            android:entryValues="@array/pref_navigation_menu_display_values"
+            android:key="navbar_menu_display"
+            android:title="@string/title_pref_navigation_menu_display"
+            android:summary="@string/summary_pref_navigation_menu_display" />
+        
+        <ListPreference
+            android:entries="@array/pref_navigation_menu_entries"
+            android:entryValues="@array/pref_navigation_menu_values"
+            android:key="pref_menu_display"
+            android:title="@string/title_pref_menu_display"
+            android:summary="@string/summary_pref_menu_display" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/nav_bar_config_title">
+
+        <ListPreference
+            android:entries="@array/nav_button_entries"
+            android:entryValues="@array/nav_button_values"
+            android:key="navbutton_config"
+            android:title="@string/nav_buttons_config_title" />
+        
+        <PreferenceScreen
+            android:key="button_order"
+            android:title="@string/title_nav_controls_order"
+            android:fragment="com.android.settings.cna.NavBarSettings$NavButtonOrder">
+        </PreferenceScreen>
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="nav_button_color"
+            android:title="@string/nav_color_setting"
+            android:defaultValue="#FFFFFF" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/navigation_bar_size">
+
+        <ListPreference
+            android:entries="@array/navigation_bar_height_entries"
+            android:entryValues="@array/navigation_bar_height"
+            android:key="navigation_bar_height"
+            android:title="@string/nav_bar_portrait" />
+
+        <ListPreference
+            android:entries="@array/navigation_bar_width_entries"
+            android:entryValues="@array/navigation_bar_width"
+            android:key="navigation_bar_width"
+            android:title="@string/nav_bar_landscape" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/glow_times_title">
+
+        <ListPreference
+            android:entries="@array/glow_times_entries"
+            android:entryValues="@array/glow_times_values"
+            android:key="glow_times"
+            android:title="@string/glow_times_title"
+            android:summary="@string/glow_times_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/button_transparency">
+
+        <com.android.settings.cna.SeekBarPreference
+            android:key="button_transparency"
+            android:title="@string/button_transparency_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

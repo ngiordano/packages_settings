@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/volume_options_title">
+
+    <CheckBoxPreference
+        android:key="enable_volume_options"
+        android:title="@string/enable_volume_options_title"
+        android:summary="@string/enable_volume_options_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/custom_carrier_settings">
+
+        <Preference android:key="custom_carrier_label"
+            android:title="@string/custom_carrier_settings_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/statusbar_transparency_settings">
+
+    <ListPreference
+        android:key="status_bar_transparency"
+        android:title="@string/statusbar_transparency"
+        android:summary="@string/statusbar_transparency_summary"
+        android:entries="@array/statusbar_transparency_entries"
+        android:entryValues="@array/statusbar_transparency_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/recents_list_title">
+
+        <CheckBoxPreference
+            android:key="horizontal_recents_task_panel"
+            android:title="@string/horizontal_recents_task_panel_title"
+            android:summary="@string/horizontal_recents_task_panel_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/combined_bar_title">
+
+        <CheckBoxPreference
+            android:key="combined_bar_auto_hide"
+            android:title="@string/combined_bar_auto_hide_title"
+            android:summary="@string/combined_bar_auto_hide_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

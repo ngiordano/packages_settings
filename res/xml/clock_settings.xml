@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/clock_options_title">
+    
+	<ListPreference
+		android:key="clock_style"
+		android:entries="@array/clock_style_entries"
+		android:entryValues="@array/clock_style_values"
+		android:title="@string/clock_title_enable" />
+
+	<ListPreference
+		android:key="clock_am_pm_style"
+		android:entries="@array/clock_ampm_entries"
+		android:entryValues="@array/clock_ampm_values"
+		android:title="@string/title_clock_ampm_entries" />
+
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="clock_color"
+        android:title="@string/clock_colors_settings"
+        android:defaultValue="@android:color/holo_blue_light" />
+
+	</PreferenceCategory>
+    
+	<PreferenceCategory
+		android:title="@string/alarm_clock_options">
+        
+		<CheckBoxPreference
+            android:key="alarm"
+            android:title="@string/enable_alarm_clock_icon_title"
+            android:summary="@string/enable_alarm_clock_icon_summary" />
+        
+	</PreferenceCategory>
+
+</PreferenceScreen>

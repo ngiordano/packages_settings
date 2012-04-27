@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/lockscreen_styles_title">
+
+        <ListPreference
+            android:key="pref_lockscreen_targets"
+            android:title="@string/number_of_targets_title"
+            android:entries="@array/pref_lockscreen_target_entries"
+            android:entryValues="@array/pref_lockscreen_target_values" />
+
+        <ListPreference
+            android:key="pref_lockscreen_layout"
+            android:title="@string/layout_of_lockscreen_title"
+            android:entries="@array/pref_lockscreen_layout_entries"
+            android:entryValues="@array/pref_lockscreen_layout_values" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="lockscreen_text_color"
+            android:title="@string/lockscreen_text_color_title"
+            android:defaultValue="#ffffffff" />
+
+        <Preference
+            android:key="wallpaper"
+            android:title="@string/lockscreen_wallpaper_title"
+            android:summary="@string/lockscreen_wallpaper_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/custom_targets_title">
+
+        <Preference
+            android:key="sms_picker_1"
+            android:title="@string/sms_picker_1_title"
+            android:summary="@string/sms_picker_1_summary" />
+
+        <Preference
+            android:key="sms_picker_2"
+            android:title="@string/sms_picker_2_title"
+            android:summary="@string/sms_picker_2_summary" />
+
+        <Preference
+            android:key="sms_picker_3"
+            android:title="@string/sms_picker_3_title"
+            android:summary="@string/sms_picker_3_summary" />
+
+        <Preference
+            android:key="sms_picker_4"
+            android:title="@string/sms_picker_4_title"
+            android:summary="@string/sms_picker_4_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/custom_mms_title">
+
+        <Preference
+            android:key="sms_picker"
+            android:title="@string/sms_picker_title"
+            android:summary="@string/sms_picker_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

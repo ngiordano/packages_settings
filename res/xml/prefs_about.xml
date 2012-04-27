@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+	<PreferenceCategory
+		android:key="Team Passion"
+		android:title="@string/passion">
+
+		<Preference
+			android:key="passion_website"
+			android:title="@string/passion_website_title"
+			android:summary="@string/passion_website_summary" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:key="devs"
+		android:title="@string/devs">
+		<com.android.settings.widget.DeveloperPreference
+			android:title="Jaydub"
+			settings:twitterHandle="82jaydub"
+			settings:donateLink="@string/donate_jaydub" />
+
+		<com.android.settings.widget.DeveloperPreference
+			android:title="NeoBuddy89"
+			settings:twitterHandle="PranAwesome"
+			settings:donateLink="@string/donate_neobuddy89" />
+
+		<com.android.settings.widget.DeveloperPreference
+			android:title="NGiordano"
+			settings:twitterHandle="ngiordano"
+			settings:donateLink="@string/donate_ngiordano" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+		android:title="@string/display_rotation_title">
+
+        <PreferenceScreen
+            android:key="display_rotation"
+            android:fragment="com.android.settings.cna.DisplayRotation"
+            android:title="@string/rotation_settings_title" />
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="@string/animation_settings_title">
+
+        <CheckBoxPreference
+            android:key="electron_beam_animation_on"
+            android:title="@string/display_electron_beam_animation_on_title"
+            android:defaultValue="false"
+            android:enabled="false"/>
+
+        <CheckBoxPreference
+            android:key="electron_beam_animation_off"
+            android:title="@string/display_electron_beam_animation_off_title"
+            android:defaultValue="true" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

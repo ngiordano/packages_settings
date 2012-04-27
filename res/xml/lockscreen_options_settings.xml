@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/title_pref_lockscreen_unlock_options">
+
+        <CheckBoxPreference
+            android:key="pref_lockscreen_menu_unlock"
+            android:title="@string/title_pref_lockscreen_menu_unlock"
+            android:summary="@string/summary_pref_lockscreen_menu_unlock" />
+
+        <CheckBoxPreference
+            android:key="pref_lockscreen_quick_unlock"
+            android:title="@string/lockscreen_quick_unlock_control_title"
+            android:summary="@string/lockscreen_quick_unlock_control_summary" />
+
+        <CheckBoxPreference
+            android:key="lockscreen_before_unlock"
+            android:title="@string/lockscreen_before_unlock_title"
+            android:summary="@string/lockscreen_before_unlock_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_pref_lockscreen_widgets">
+
+        <CheckBoxPreference
+            android:key="enable_lockscreen_rotation"
+            android:title="@string/lockscreen_rotation_title"
+            android:summary="@string/lockscreen_rotation_summary" />
+
+        <CheckBoxPreference
+            android:key="lockscreen_battery"
+            android:title="@string/lockscreen_battery_title"
+            android:summary="@string/lockscreen_battery_summary" />
+
+        <CheckBoxPreference
+            android:key="pref_lockscreen_disable_camera"
+            android:title="@string/title_pref_lockscreen_sound_for_cam"
+            android:summary="@string/summary_pref_lockscreen_sound_for_cam" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_pref_lockscreen_controls">
+
+        <CheckBoxPreference
+            android:key="volume_wake"
+            android:title="@string/volume_wake_title"
+            android:summary="@string/volume_wake_summary" />
+
+        <CheckBoxPreference
+            android:key="volume_music_controls"
+            android:title="@string/volume_music_controls_title"
+            android:summary="@string/volume_music_controls_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_pref_lockscreen_advanced_options">
+
+        <CheckBoxPreference
+            android:key="lockscreen_user_timeout_override"
+            android:title="@string/title_lockscreen_user_timeout_override"
+            android:summary="@string/summary_lockscreen_user_timeout_override" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
