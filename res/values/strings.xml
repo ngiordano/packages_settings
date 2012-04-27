@@ -1714,7 +1714,7 @@
     <!-- About phone screen,  setting option name-->
     <string name="build_number">Build number</string>
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Codename Android Version</string>
+    <string name="mod_version">Utopia Version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- About phone screen, show when a value of some status item is unavailable. -->
@@ -3825,11 +3825,11 @@ found in the list of installed apps.</string>
 
 
     <!-- CNA Settings Headers -->
-    <string name="header_category_cna">Codename</string>
+    <string name="header_category_cna">Utopia Control</string>
     <string name="cna_settings_title">Interface</string>
     <string name="launcher_settings_title">Launcher</string>
     <string name="color_settings_title">Color</string>
-    <string name="cna_settings">Codename Android</string>
+    <string name="cna_settings">Team Passion</string>
     <string name="team">Support our efforts!</string>
     <string name="passion">Show us some love</string>
     <string name="passion_website_title">Team Passion Website</string>

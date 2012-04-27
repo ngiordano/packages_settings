@@ -67,6 +67,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory 
+        android:title="@string/input_settings_header">
+
+        <PreferenceScreen
+            android:key="navbar_settings"
+            android:fragment="com.android.settings.cna.NavBarSettings"
+            android:title="@string/navbar_settings_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory 
         android:title="@string/display_settings_header">
 
         <PreferenceScreen
